@@ -1,0 +1,32 @@
+spring:
+  application:
+    # Service name shown in logs and metrics (like APP_NAME in Node).
+    name: sagavortex-booking-api
+
+  datasource:
+    # JDBC URL: host, port, and database name for PostgreSQL.
+    url: jdbc:postgresql://localhost:5432/sagavortex_booking
+    username: sagavortex
+    password: 7fKp9mN2xQ4vLw8sRtZ1
+    # Driver class; Spring Boot 4 usually auto-detects this when postgresql is on the classpath.
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    # validate = Hibernate checks entities match the DB schema; it does NOT create tables.
+    # Flyway owns schema changes (production-like, like Prisma migrate).
+    hibernate:
+      ddl-auto: validate
+    # false = do not keep DB session open through the entire HTTP request (avoids lazy-load surprises).
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+  flyway:
+    # Run SQL migrations from classpath on startup.
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080

@@ -1,0 +1,5 @@
+# Active when tests run with @ActiveProfiles("test") or spring.profiles.active=test.
+# Phase 7 integration tests will override the datasource with Testcontainers.
+spring:
+  flyway:
+    enabled: true
