@@ -2,14 +2,9 @@
 
 Photography booking REST API built with Java 26 and Spring Boot 4.
 
-## Phase 1 (current)
+## Phase 2 (current)
 
-Project scaffolding only — no runnable app yet. Phase 2 adds the Spring Boot entry point.
-
-### Prerequisites
-
-- Java 26 JDK
-- Docker (for local PostgreSQL)
+The app has a main class and can start. No REST endpoints yet — Phase 3 adds the first API.
 
 ### Start PostgreSQL
 
@@ -17,14 +12,12 @@ Project scaffolding only — no runnable app yet. Phase 2 adds the Spring Boot e
 docker compose up -d
 ```
 
-### Verify Maven setup
-
-Use **either** your Homebrew Maven or the project wrapper (same result):
+### Run the application
 
 ```bash
-mvn validate
+mvn spring-boot:run
 # or
-./mvnw validate
+./mvnw spring-boot:run
 ```
 
-The wrapper pins Maven 3.9.16 so CI and other machines don't need a global install.
+The server listens on http://localhost:8080. Expect a Whitelabel 404 at `/` until controllers are added in Phase 3.
