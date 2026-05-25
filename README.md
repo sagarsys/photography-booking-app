@@ -2,9 +2,10 @@
 
 Photography booking REST API built with Java 26 and Spring Boot 4.
 
-## Phase 3 (current)
+## Phase 4 (current)
 
 Packages API is available at `/api/packages`.
+Customer persistence is now in place for the upcoming booking-request flow.
 
 Run Postgres and the app, then try:
 
@@ -30,4 +31,4 @@ mvn spring-boot:run
 ./mvnw spring-boot:run
 ```
 
-The server listens on http://localhost:8080. Expect a Whitelabel 404 at `/` until controllers are added in Phase 3.
+The server listens on http://localhost:8080. Expect a Whitelabel 404 at `/` because no root controller exists.
