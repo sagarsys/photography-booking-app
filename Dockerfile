@@ -1,13 +1,14 @@
-FROM maven:3.9.9-eclipse-temurin-26 AS build
+FROM eclipse-temurin:26-jdk AS build
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends maven \
+    && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 
-COPY .mvn .mvn
-COPY mvnw pom.xml ./
-RUN chmod +x mvnw
-RUN ./mvnw -q -DskipTests dependency:go-offline
+COPY pom.xml ./
+RUN mvn -q -DskipTests dependency:go-offline
 
 COPY src src
-RUN ./mvnw -q -DskipTests package
+RUN mvn -q -DskipTests package
 
 FROM eclipse-temurin:26-jre
 WORKDIR /app
