@@ -2,10 +2,11 @@
 
 Photography booking REST API built with Java 26 and Spring Boot 4.
 
-## Phase 5 (current)
+## Phase 6 (current)
 
 Packages API is available at `/api/packages`.
 Booking request API is available at `/api/booking-requests`.
+Errors now return a consistent JSON format from a global exception handler.
 
 Run Postgres and the app, then try:
 
