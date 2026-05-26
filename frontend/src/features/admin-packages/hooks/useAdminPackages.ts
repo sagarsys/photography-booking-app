@@ -1,18 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
-import { isApiError } from '../../../shared/api/http'
-import type { PhotographyPackageResponse } from '../../../shared/api/types'
-import {
-  createPackage,
-  deactivatePackage,
-  getPackages,
-  updatePackage,
-} from '../../packages/api/packageApi'
+import { createPackage, deactivatePackage, getPackages, updatePackage } from '@/features/packages/api/packageApi'
 import {
   initialPackageFormValues,
   toPackageRequest,
   validatePackageForm,
   type PackageFormValues,
-} from '../../packages/lib/packageForm'
+} from '@/features/packages/lib/packageForm'
+import { isApiError } from '@/shared/api/http'
+import type { PhotographyPackageResponse } from '@/shared/api/types'
 
 export function useAdminPackages() {
   const [packages, setPackages] = useState<PhotographyPackageResponse[]>([])

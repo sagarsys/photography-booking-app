@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react'
-import { cn } from '../lib/cn'
+import { cn } from '@/shared/lib/cn'
 
 const variantClasses = {
   neutral: 'border-white/10 bg-white/5 text-zinc-300',

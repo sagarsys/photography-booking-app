@@ -1,4 +1,4 @@
-import type { PhotographyPackageRequest } from '../../../shared/api/types'
+import type { PhotographyPackageRequest } from '@/shared/api/types'
 
 export interface PackageFormValues {
   name: string

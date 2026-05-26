@@ -3,7 +3,7 @@ import type {
   SelectHTMLAttributes,
   TextareaHTMLAttributes,
 } from 'react'
-import { cn } from '../lib/cn'
+import { cn } from '@/shared/lib/cn'
 
 export function Input(props: InputHTMLAttributes<HTMLInputElement>) {
   return (

@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from 'react'
-import { cn } from '../lib/cn'
+import { cn } from '@/shared/lib/cn'
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger'
 

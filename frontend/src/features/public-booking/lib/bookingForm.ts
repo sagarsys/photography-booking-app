@@ -1,4 +1,4 @@
-import type { BookingRequestCreateRequest } from '../../../shared/api/types'
+import type { BookingRequestCreateRequest } from '@/shared/api/types'
 
 export interface BookingFormValues {
   fullName: string

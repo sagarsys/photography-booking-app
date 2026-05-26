@@ -1,8 +1,8 @@
-import type { PhotographyPackageResponse } from '../../../shared/api/types'
-import { formatCurrencyFromCents } from '../../../shared/lib/format'
-import { Button } from '../../../shared/ui/button'
-import { EmptyState } from '../../../shared/ui/empty-state'
-import { InlineNotice } from '../../../shared/ui/inline-notice'
+import type { PhotographyPackageResponse } from '@/shared/api/types'
+import { formatCurrencyFromCents } from '@/shared/lib/format'
+import { Button } from '@/shared/ui/button'
+import { EmptyState } from '@/shared/ui/empty-state'
+import { InlineNotice } from '@/shared/ui/inline-notice'
 
 interface PackageCatalogProps {
   packages: PhotographyPackageResponse[]

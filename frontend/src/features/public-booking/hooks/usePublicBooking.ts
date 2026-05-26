@@ -1,18 +1,18 @@
 import { useEffect, useMemo, useState } from 'react'
-import { createBooking } from '../../bookings/api/bookingApi'
-import { getPackages } from '../../packages/api/packageApi'
-import { isApiError } from '../../../shared/api/http'
-import type {
-  BookingRequestResponse,
-  PhotographyPackageResponse,
-} from '../../../shared/api/types'
+import { createBooking } from '@/features/bookings/api/bookingApi'
+import { getPackages } from '@/features/packages/api/packageApi'
 import {
   getBookingFieldKey,
   initialBookingFormValues,
   toBookingRequest,
   validateBookingForm,
   type BookingFormValues,
-} from '../lib/bookingForm'
+} from '@/features/public-booking/lib/bookingForm'
+import { isApiError } from '@/shared/api/http'
+import type {
+  BookingRequestResponse,
+  PhotographyPackageResponse,
+} from '@/shared/api/types'
 
 export function usePublicBooking() {
   const [packages, setPackages] = useState<PhotographyPackageResponse[]>([])

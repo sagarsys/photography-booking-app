@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { getBookings } from '../../bookings/api/bookingApi'
-import { summarizeCustomers } from '../../customers/lib/summarizeCustomers'
-import { isApiError } from '../../../shared/api/http'
-import type { BookingRequestResponse } from '../../../shared/api/types'
+import { getBookings } from '@/features/bookings/api/bookingApi'
+import { summarizeCustomers } from '@/features/customers/lib/summarizeCustomers'
+import { isApiError } from '@/shared/api/http'
+import type { BookingRequestResponse } from '@/shared/api/types'
 
 export function useAdminCustomers() {
   const [bookings, setBookings] = useState<BookingRequestResponse[]>([])

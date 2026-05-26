@@ -1,9 +1,9 @@
-import { request } from '../../../shared/api/http'
+import { request } from '@/shared/api/http'
 import type {
   BookingRequestCreateRequest,
   BookingRequestResponse,
   BookingStatus,
-} from '../../../shared/api/types'
+} from '@/shared/api/types'
 
 export function getBookings() {
   return request<BookingRequestResponse[]>('/api/booking-requests')

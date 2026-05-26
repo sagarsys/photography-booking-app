@@ -1,4 +1,4 @@
-import type { BookingRequestResponse, BookingStatus } from '../../../shared/api/types'
+import type { BookingRequestResponse, BookingStatus } from '@/shared/api/types'
 
 export interface AdminCustomerSummary {
   customerId: number

@@ -1,8 +1,8 @@
-import { request } from '../../../shared/api/http'
+import { request } from '@/shared/api/http'
 import type {
   PhotographyPackageRequest,
   PhotographyPackageResponse,
-} from '../../../shared/api/types'
+} from '@/shared/api/types'
 
 export function getPackages() {
   return request<PhotographyPackageResponse[]>('/api/packages')

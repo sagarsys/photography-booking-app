@@ -1,6 +1,6 @@
-import type { AdminCustomerSummary } from '../../customers/lib/summarizeCustomers'
-import { formatDateTime } from '../../../shared/lib/format'
-import { StatusBadge } from '../../../shared/ui/status-badge'
+import type { AdminCustomerSummary } from '@/features/customers/lib/summarizeCustomers'
+import { formatDateTime } from '@/shared/lib/format'
+import { StatusBadge } from '@/shared/ui/status-badge'
 
 export function CustomerGrid({
   customers,

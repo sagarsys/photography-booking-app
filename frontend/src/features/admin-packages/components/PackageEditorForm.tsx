@@ -1,8 +1,8 @@
 import type { FormEvent } from 'react'
-import { Button } from '../../../shared/ui/button'
-import { Field } from '../../../shared/ui/field'
-import { Input, Textarea } from '../../../shared/ui/form-controls'
-import type { PackageFormValues } from '../../packages/lib/packageForm'
+import type { PackageFormValues } from '@/features/packages/lib/packageForm'
+import { Button } from '@/shared/ui/button'
+import { Field } from '@/shared/ui/field'
+import { Input, Textarea } from '@/shared/ui/form-controls'
 
 interface PackageEditorFormProps {
   editingPackageId: number | null

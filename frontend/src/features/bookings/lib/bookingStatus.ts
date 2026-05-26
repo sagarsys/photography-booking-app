@@ -1,4 +1,4 @@
-import type { BookingStatus } from '../../../shared/api/types'
+import type { BookingStatus } from '@/shared/api/types'
 
 export function getAllowedStatusActions(status: BookingStatus): BookingStatus[] {
   switch (status) {

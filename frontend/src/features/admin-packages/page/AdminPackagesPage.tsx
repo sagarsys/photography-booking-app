@@ -1,11 +1,11 @@
 import type { FormEvent } from 'react'
-import { Button } from '../../../shared/ui/button'
-import { Card, CardTitle } from '../../../shared/ui/card'
-import { InlineNotice } from '../../../shared/ui/inline-notice'
-import { PageHeader } from '../../../shared/ui/page-header'
-import { PackageEditorForm } from '../components/PackageEditorForm'
-import { PackageList } from '../components/PackageList'
-import { useAdminPackages } from '../hooks/useAdminPackages'
+import { PackageEditorForm } from '@/features/admin-packages/components/PackageEditorForm'
+import { PackageList } from '@/features/admin-packages/components/PackageList'
+import { useAdminPackages } from '@/features/admin-packages/hooks/useAdminPackages'
+import { Button } from '@/shared/ui/button'
+import { Card, CardTitle } from '@/shared/ui/card'
+import { InlineNotice } from '@/shared/ui/inline-notice'
+import { PageHeader } from '@/shared/ui/page-header'
 
 export function AdminPackagesPage() {
   const {

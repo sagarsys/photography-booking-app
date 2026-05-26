@@ -1,11 +1,11 @@
-import { Button } from '../../../shared/ui/button'
-import { Card, CardTitle } from '../../../shared/ui/card'
-import { EmptyState } from '../../../shared/ui/empty-state'
-import { InlineNotice } from '../../../shared/ui/inline-notice'
-import { PageHeader } from '../../../shared/ui/page-header'
-import { BookingFilters } from '../components/BookingFilters'
-import { BookingTable } from '../components/BookingTable'
-import { useAdminBookings } from '../hooks/useAdminBookings'
+import { BookingFilters } from '@/features/admin-bookings/components/BookingFilters'
+import { BookingTable } from '@/features/admin-bookings/components/BookingTable'
+import { useAdminBookings } from '@/features/admin-bookings/hooks/useAdminBookings'
+import { Button } from '@/shared/ui/button'
+import { Card, CardTitle } from '@/shared/ui/card'
+import { EmptyState } from '@/shared/ui/empty-state'
+import { InlineNotice } from '@/shared/ui/inline-notice'
+import { PageHeader } from '@/shared/ui/page-header'
 
 export function AdminBookingsPage() {
   const {

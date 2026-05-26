@@ -1,7 +1,7 @@
-import type { BookingRequestResponse } from '../../../shared/api/types'
-import { formatDateTime } from '../../../shared/lib/format'
-import { Card, CardTitle } from '../../../shared/ui/card'
-import { StatusBadge } from '../../../shared/ui/status-badge'
+import type { BookingRequestResponse } from '@/shared/api/types'
+import { formatDateTime } from '@/shared/lib/format'
+import { Card, CardTitle } from '@/shared/ui/card'
+import { StatusBadge } from '@/shared/ui/status-badge'
 
 export function BookingConfirmation({
   booking,

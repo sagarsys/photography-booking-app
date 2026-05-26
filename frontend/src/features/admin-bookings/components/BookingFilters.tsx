@@ -1,5 +1,5 @@
-import type { BookingStatus } from '../../../shared/api/types'
-import { Input, Select } from '../../../shared/ui/form-controls'
+import type { BookingStatus } from '@/shared/api/types'
+import { Input, Select } from '@/shared/ui/form-controls'
 
 interface BookingFiltersProps {
   search: string

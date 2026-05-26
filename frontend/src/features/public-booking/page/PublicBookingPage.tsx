@@ -1,10 +1,10 @@
 import type { FormEvent } from 'react'
-import { Card, CardTitle } from '../../../shared/ui/card'
-import { PageHeader } from '../../../shared/ui/page-header'
-import { BookingConfirmation } from '../components/BookingConfirmation'
-import { BookingRequestForm } from '../components/BookingRequestForm'
-import { PackageCatalog } from '../components/PackageCatalog'
-import { usePublicBooking } from '../hooks/usePublicBooking'
+import { BookingConfirmation } from '@/features/public-booking/components/BookingConfirmation'
+import { BookingRequestForm } from '@/features/public-booking/components/BookingRequestForm'
+import { PackageCatalog } from '@/features/public-booking/components/PackageCatalog'
+import { usePublicBooking } from '@/features/public-booking/hooks/usePublicBooking'
+import { Card, CardTitle } from '@/shared/ui/card'
+import { PageHeader } from '@/shared/ui/page-header'
 
 export function PublicBookingPage() {
   const {

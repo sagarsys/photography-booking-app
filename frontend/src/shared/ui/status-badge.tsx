@@ -1,5 +1,5 @@
-import type { BookingStatus } from '../api/types'
-import { cn } from '../lib/cn'
+import type { BookingStatus } from '@/shared/api/types'
+import { cn } from '@/shared/lib/cn'
 
 const statusClasses: Record<BookingStatus, string> = {
   PENDING: 'bg-amber-500/15 text-amber-200 ring-1 ring-amber-400/20',

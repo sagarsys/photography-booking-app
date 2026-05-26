@@ -1,10 +1,10 @@
 import { Navigate, NavLink, Route, Routes } from 'react-router-dom'
-import { AdminBookingsPage } from '../features/admin-bookings/page/AdminBookingsPage'
-import { AdminCustomersPage } from '../features/admin-customers/page/AdminCustomersPage'
-import { AdminPackagesPage } from '../features/admin-packages/page/AdminPackagesPage'
-import { PublicBookingPage } from '../features/public-booking/page/PublicBookingPage'
-import { cn } from '../shared/lib/cn'
-import { navigationItems } from './navigation'
+import { AdminBookingsPage } from '@/features/admin-bookings/page/AdminBookingsPage'
+import { AdminCustomersPage } from '@/features/admin-customers/page/AdminCustomersPage'
+import { AdminPackagesPage } from '@/features/admin-packages/page/AdminPackagesPage'
+import { PublicBookingPage } from '@/features/public-booking/page/PublicBookingPage'
+import { cn } from '@/shared/lib/cn'
+import { navigationItems } from '@/app/navigation'
 
 export default function App() {
   return (

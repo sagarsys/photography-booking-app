@@ -1,8 +1,8 @@
-import type { BookingRequestResponse, BookingStatus } from '../../../shared/api/types'
-import { formatDateTime } from '../../../shared/lib/format'
-import { Button } from '../../../shared/ui/button'
-import { StatusBadge } from '../../../shared/ui/status-badge'
-import { getAllowedStatusActions } from '../../bookings/lib/bookingStatus'
+import { getAllowedStatusActions } from '@/features/bookings/lib/bookingStatus'
+import type { BookingRequestResponse, BookingStatus } from '@/shared/api/types'
+import { formatDateTime } from '@/shared/lib/format'
+import { Button } from '@/shared/ui/button'
+import { StatusBadge } from '@/shared/ui/status-badge'
 
 interface BookingTableProps {
   bookings: BookingRequestResponse[]

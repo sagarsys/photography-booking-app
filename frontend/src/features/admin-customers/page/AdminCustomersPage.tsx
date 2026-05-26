@@ -1,11 +1,11 @@
-import { Button } from '../../../shared/ui/button'
-import { Card, CardTitle } from '../../../shared/ui/card'
-import { EmptyState } from '../../../shared/ui/empty-state'
-import { Input } from '../../../shared/ui/form-controls'
-import { InlineNotice } from '../../../shared/ui/inline-notice'
-import { PageHeader } from '../../../shared/ui/page-header'
-import { CustomerGrid } from '../components/CustomerGrid'
-import { useAdminCustomers } from '../hooks/useAdminCustomers'
+import { CustomerGrid } from '@/features/admin-customers/components/CustomerGrid'
+import { useAdminCustomers } from '@/features/admin-customers/hooks/useAdminCustomers'
+import { Button } from '@/shared/ui/button'
+import { Card, CardTitle } from '@/shared/ui/card'
+import { EmptyState } from '@/shared/ui/empty-state'
+import { Input } from '@/shared/ui/form-controls'
+import { InlineNotice } from '@/shared/ui/inline-notice'
+import { PageHeader } from '@/shared/ui/page-header'
 
 export function AdminCustomersPage() {
   const { errorMessage, filteredCustomers, loadCustomers, loading, search, setSearch } =

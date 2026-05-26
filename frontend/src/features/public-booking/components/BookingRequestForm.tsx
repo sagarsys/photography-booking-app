@@ -1,11 +1,11 @@
 import type { FormEvent } from 'react'
-import type { BookingFormValues } from '../lib/bookingForm'
-import type { PhotographyPackageResponse } from '../../../shared/api/types'
-import { formatCurrencyFromCents } from '../../../shared/lib/format'
-import { Button } from '../../../shared/ui/button'
-import { Field } from '../../../shared/ui/field'
-import { Input, Select, Textarea } from '../../../shared/ui/form-controls'
-import { InlineNotice } from '../../../shared/ui/inline-notice'
+import type { BookingFormValues } from '@/features/public-booking/lib/bookingForm'
+import type { PhotographyPackageResponse } from '@/shared/api/types'
+import { formatCurrencyFromCents } from '@/shared/lib/format'
+import { Button } from '@/shared/ui/button'
+import { Field } from '@/shared/ui/field'
+import { Input, Select, Textarea } from '@/shared/ui/form-controls'
+import { InlineNotice } from '@/shared/ui/inline-notice'
 
 interface BookingRequestFormProps {
   fieldErrors: Record<string, string>
