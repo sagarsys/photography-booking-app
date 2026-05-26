@@ -29,6 +29,10 @@ public class PhotographyPackageService {
         return toResponse(getPackageOrThrow(id));
     }
 
+    public PhotographyPackage findActiveEntityById(Long id) {
+        return getPackageOrThrow(id);
+    }
+
     @Transactional
     public PhotographyPackageResponse create(PhotographyPackageRequest request) {
         PhotographyPackage photographyPackage = PhotographyPackage.builder()
