@@ -1,15 +1,19 @@
-# SagaVortex Booking API
+# SagaVortex Photography Booking App
 
-SagaVortex Booking API is a Spring Boot backend for a photography booking system.
-It manages photography packages, customers, booking requests, booking status updates,
-Flyway database migrations, and PostgreSQL-backed tests.
+SagaVortex Photography Booking App is a full-stack demo with:
+
+- a Spring Boot backend API for packages, booking requests, and status workflow
+- a Vite + React frontend for customer booking and admin management screens
 
 Demo API URL: [https://sagavortex-booking-api.onrender.com](https://sagavortex-booking-api.onrender.com)
+
 Demo Frontend URL: [https://photography-booking-app-nine.vercel.app/](https://photography-booking-app-nine.vercel.app/)
 
 ![SagaVortex frontend screenshot](./screenshot.png)
 
 ## Stack
+
+### Backend
 
 - Java 26
 - Spring Boot 4
@@ -20,6 +24,13 @@ Demo Frontend URL: [https://photography-booking-app-nine.vercel.app/](https://ph
 - Jakarta Validation
 - Lombok
 - JUnit 5 / Mockito / MockMvc / Testcontainers
+
+### Frontend
+
+- Vite
+- React + TypeScript
+- Tailwind CSS
+- Feature-based architecture (`app` / `features` / `shared`)
 
 ## What it does
 
@@ -33,6 +44,7 @@ Demo Frontend URL: [https://photography-booking-app-nine.vercel.app/](https://ph
 
 - Java 26
 - Docker
+- Node.js 22+
 
 ## Run locally
 
@@ -63,6 +75,16 @@ or with the Maven wrapper:
 
 The API runs at `http://localhost:8080`.
 
+### 3. Run the frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend runs at `http://localhost:5173`.
+
 ## Useful Maven commands
 
 ```bash
@@ -84,6 +106,7 @@ Wrapper equivalents:
 - [API docs](docs/API.md)
 - [Deployment docs](docs/DEPLOYMENT.md)
 - [Frontend deploy docs](docs/FRONTEND_DEPLOY.md)
+- [Frontend architecture docs](docs/FRONTEND_ARCHITECTURE.md)
 
 ## Tests
 
