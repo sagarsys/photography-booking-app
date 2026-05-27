@@ -26,6 +26,14 @@ Add these repository secrets in GitHub Actions:
 - Build command: `npm run build`
 - Output directory: `dist`
 
+## CI deploy strategy
+
+The GitHub workflow runs frontend quality gates locally (`npm run lint`, `npm run build`) and then performs a direct production deploy with:
+
+- `vercel deploy --prod --yes`
+
+This avoids CI failures related to local `vercel build --prebuilt` shell spawning in some environments.
+
 ## API base URL
 
 The frontend API URL is set by Vite env files:
