@@ -19,6 +19,8 @@ Thumbs.db
 # Local env (never commit secrets)
 .env
 .env.local
+.env.*.local
+.vercel/
 
 # Logs
 *.log

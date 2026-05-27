@@ -1,9 +1,10 @@
 import type { ApiErrorResponse } from './types'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? ''
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL ?? '').replace(/\/$/, '')
 
 function buildUrl(path: string) {
-  return `${API_BASE_URL}${path}`
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`
+  return `${API_BASE_URL}${normalizedPath}`
 }
 
 async function parseResponse(response: Response) {
