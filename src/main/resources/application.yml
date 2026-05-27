@@ -32,4 +32,17 @@ server:
 
 app:
   cors:
-    allowed-origin-patterns: ${APP_CORS_ALLOWED_ORIGIN_PATTERNS:http://localhost:5173,https://*.vercel.app}
+    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:4173,https://photography-booking-app-nine.vercel.app}
+    allowed-origin-patterns: ${APP_CORS_ALLOWED_ORIGIN_PATTERNS:https://*.vercel.app}
+
+logging:
+  level:
+    # Keep startup + request logs for this app.
+    com.sagavortex.booking: INFO
+    # Keep startup summary line visible.
+    org.flywaydb.core.internal.command.DbValidate: INFO
+    # Trim framework noise while keeping warnings/errors.
+    org.springframework: WARN
+    org.apache.catalina: WARN
+    org.hibernate: WARN
+    com.zaxxer.hikari: ERROR
